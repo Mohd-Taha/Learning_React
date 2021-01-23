@@ -2,6 +2,7 @@
 import './App.css';
 import React from 'react';
 import Counter from './my_components/counter'
+import FetchGithubAPI from './my_components/fetchgithubapi'
 
 class App extends React.Component {
 
@@ -9,6 +10,7 @@ class App extends React.Component {
     return (
       <div>
         <Counter />
+        <FetchGithubAPI />
       </div>
     );
   }

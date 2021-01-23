@@ -4,13 +4,16 @@ import { onIncrement, onDecrement } from './../my_store/actiontype'
 
 function Counter(props) {
     console.log(props)
+
     return (
         <div>
+            <br />
             <h1>Counter Application</h1>
             <h4>Using Redux</h4>
             <p>Count: {props.count}</p>
             <button onClick={props.increment}>Increment</button>
             <button onClick={props.decrement}>Decrement</button>
+            <hr />
         </div>
     )
 }
@@ -30,7 +33,7 @@ function mapDispatchToProps(dispatch) {
 //get krengy aur yaha sy returned obj hmy props m milyga...
 function mapReduxStoreToProps(state) {
     return {
-        count: state.count
+        count: state.counter.count
     }
 }
 
